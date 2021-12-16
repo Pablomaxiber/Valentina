@@ -1,734 +1,707 @@
 
 
 *{ margin: 0;
- padding: 0;
- 
-
-}
- 
-header{
-    background-color: black;
-    width: 100%;
-    height: 420px;
-}
-
-.banner{
-    width: 100%;
-    height: 100%;
-}
-
-
-/*NAVEGADOR*/
-
-
-.navegador{
-    background-color: black;
-    width: 100%;
-    height: 70px;
-    position: sticky;
-    top: 0px;
+    padding: 0;
     
-}
-
-.listas{ 
-    display: flex;
-    list-style-type: none;
-    height: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.page{
-    color: white;
-    font-size: 50px;
-    text-decoration: none;
-    font-family: Estonia;
-    transition: 1s;
-    
- }
- .page:hover{
-    font-size: 75px;
-}
-
-
-
-main{ background-image: url(imagen/pared2.jpg);
-    width: 100%;
-    height: 1200px;
-    background-size: auto;
-}
-.mainHome{  
-    display: grid;
-    padding: 20px;
-    grid-template-columns: 30% 60%;
-    grid-template-rows:  100px 900px;
-    grid-template-areas:"parr tit"
-                        "parr video"
-                        "parr video";
-    justify-content: space-around;
-         
-} 
-.mainDivTit{
-    grid-area: tit;
-    display: flex;
-    justify-content: center;
-    
-    color: lightyellow;
-    font-size:90px;
-    padding: 70px;
-    font-family: Dancing Script;
-}   
-.mainDiv1{ 
-    grid-area: parr;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
- 
-    
-}
-.fotoDiv1{ 
-    height: 45%;
-    width: 85%;
-    padding: 25px;
-
-}
-.mainDiv2{
-    grid-area: video;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    
-}
-.video2{
-    height: 65%;
-    width: 100%; 
-}
-.main.Par{
-
-}
-.parf{
-    height: 50px;
-    width: 100%;
-    text-align: start;
-    color: blanchedalmond;
-    font-size: 20px;
-    
-}
-.cuadro{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form{
-    margin-top: 100px;
-    height: 60%;
-    width: 60%;
-    font-size: 20px;
-    text-align: center;
-
-}
-.botonForm{
-    height: 35px;
-    width: 90px;
-}
-
-
-
-
-footer{ 
-    background-color: black;
-    width: 100%;
-    height: 200px;
-  
-}
-
-
-.grilla{
-    display: grid;
-    width: 100%;
-    height: 70px;
-    grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-    grid-template-rows: 100%;   
-} 
-.imgGrid{
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-
-}
-.tituloRedes{
-    color: blanchedalmond;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
    
-}
-.iconos{
-    width: 60px;
-    height: 60px;
-    
-}
-.iconos:hover{
-    width: 70px;
-    height: 70px;
-}
-
-/*GALERIA*/
-
-
-.grillaGaleria{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "area area1"
-                         "area2 area3"
-                         "area4 area5";
-    justify-content: space-around; 
-    align-content: space-around;  
-    
-                   
-}
-.imgGaleria:hover{
-    height: 120%;
-    width: 120%;
+   }
    
-}
-
-.imgGaleria{
-    height: 100%;
-    width: 100%;
-  transition: 1s width, 1s height;
-  
+      
     
-}
-
-/*FIN GALERIA*/
-
-/*HTML CLIPS*/
-
-.grillaClips{
-    display: grid;
-    height: 780px;
-    width: 100%;
-    grid-template-columns: 40% 40%;
-    grid-template-rows:   300px 300px;
-    grid-template-areas: "video video1"
-                         "video2 video3";
-    justify-content: space-around; 
-    align-content: space-around;                       
-}
-
-.videoPresentacion{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  
-    
-    
-}
-.clip{
-    
-    height: 380px;
-    width: 600px;
-    
-
-}
-.clips{
-    height: 100%;
-    width: 100%;
-}
-
-/*FIN CLIPS*/
-
-/*MUSICA*/
-
-.tracks{
-    height: 70%;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-h3{
-    color: blanchedalmond;
-font-size: 30px;
-}
+   header{
+       background-color: black;
+       width: 100%;
+       height: 420px;
+   }
    
-    
-
-
-
-
-/*FIN INDEX*/
-
-/*MEDIA QUERIES*/
-
-@media only screen and (max-width: 600px) {
-
-  header{
-            background-color: black;
-            width: 100%;
-            height: 200px;
-        }
-        
-        .banner{
-            width: 100%;
-            height: 100%;
-        }
-        
-        .navegador{
-            background-color: black;
-            width: 100%;
-            height: 150px;
-            position: sticky;
-            top: 0px;
+   .banner{
+       width: 100%;
+       height: 100%;
+   }
+   
+   
+   /*NAVEGADOR*/
+   
+   
+   
+    .nav-link:hover{
+       font-size: 1.25rem;
+       color: rgb(18, 60, 136);
+   }
+   
+   
+   
+   main{ background-image: url(imagen/pared2.jpg);
+       width: 100%;
+       height: 1200px;
+       background-size: auto;
+   }
+   .mainHome{  
+       display: grid;
+       padding: 20px;
+       grid-template-columns: 30% 60%;
+       grid-template-rows:  100px 900px;
+       grid-template-areas:"parr tit"
+                           "parr video"
+                           "parr video";
+       justify-content: space-around;
             
-        }
-        .listas{ 
-            
-            flex-direction: column;
-            list-style-type: none;
-            justify-content: space-evenly;
-            align-items: center;
-        
-        }
-        .page{
-            
-            color: white;
-            font-size: 25px;
-            text-decoration: none;
-            font-family: Estonia;   
-         }
-         .page:hover{
-             font-size: 25px;
-         }
-        
-         main{ 
-            height: 900px;
-               }
-    
-         .mainHome{  
-            display: grid;
-            padding: 0px;
-            grid-template-columns: 95%;
-            grid-template-rows:  60px 350px 350px;
-            grid-template-areas:"tit"
-                                "video"
-                                "parr";
-            justify-content: space-around;
-                 
-        } 
-        .mainDivTit{
-            grid-area: tit;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            color: lightyellow;
-            font-size:40px;
-            font-family: Dancing Script;
-        }   
-        .mainDiv1{ 
-            grid-area: parr;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .fotoDiv1{ 
-            height: 100%;
-            width: 65%;
-            
-        
-        }
-        .mainDiv2{
-            grid-area: video;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        
-            
-        }
-        .video2{
-            height: 90%;
-            width: 100%; 
-        }
-        .main.Par{
-            height: 150px;
-            width: 100%;
-        }
-        .parf{
-            height: 100%;
-            width: 100%;
-            text-align: start;
-            color: blanchedalmond;
-            font-size: 20px;
-            
-        }
-
-        .cuadro{
-            height: 90%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .form{
-            margin-top: 40px;
-            height: 60%;
-            width: 80%;
-            font-size: 12px;
-            text-align: center;
-
-        }
-        .botonForm{
-            height: 35px;
-            width: 90px;
-        }
-
-    
-    
-        footer{ 
-            background-color: black;
-            width: 100%;
-            height: 150px;
-          
-        }
-        
-        
-        .grilla{
-            display: grid;
-            width: 100%;
-            height: 50px;
-            grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-            grid-template-rows: 100%;   
-        } 
-        .imgGrid{
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-        
-        }
-        .tituloRedes{
-            color: blanchedalmond;
-            font-size: 15px;
-            text-align: center;
-            margin-top: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-           
-        }
-        .iconos{
-            width: 40px;
-            height: 40px;
-            
-        }
-        .iconos:hover{
-            width: 40px;
-            height: 40px;
-        }
-        .grillaGaleria{
-            width: 100%;
-            height: 100%;
-            display: grid;
-           
-            grid-template-columns: 95%;
-            grid-template-rows: 145px 145px 145px 145px 145px 145px;
-            grid-template-areas:"area"
-                                "area1" 
-                                "area2"
-                                "area3"
-                                "area4"
-                                "area5";
-            justify-items: center;
-            align-content: space-around;  
-                           
-        }
-        .imgGaleria:hover{
-            height: 90%;
-            width: 55%;
-          
-        }
-        
-        .imgGaleria{
-            height: 90%;
-            width: 55%;
-           
-        }
-    
-    
-        .videoPresentacion{
-            height: 140px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            
-        }
-        .clip{
-            
-            height: 130px;
-            width: 80%;
-        }
-    
-        .grillaClips{
-            margin-top: 20px;
-            display: grid;
-            height: 750px;
-            width: 100%;
-            grid-template-columns: 95%;
-            grid-template-rows:  190px 190px 190px 190px;
-            grid-template-areas: "video"
-                                 "video1"
-                                 "video2"
-                                 "video3";
-            justify-items: center;                       
-        }
-        
+   } 
+   .mainDivTit{
        
-        
-        .clips{
-            height: 85%;
-            width: 85%;
-        }
-        
-}
-
-@media only screen and (min-width: 600px) and (max-width:992px){
-    header{
-        background-color: black;
-        width: 100%;
-        height: 300px;
-    }
+       grid-area: tit;
+       display: flex;
+       justify-content: center;
+       
+       color: lightyellow;
+       font-size: 150px;
+       padding: 0px;
+       font-family: Dancing Script;
+   }   
+   .mainDiv1{ 
+       grid-area: parr;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       
     
-    .banner{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .navegador{
-        background-color: black;
-        width: 100%;
-        height: 100px;
-        position: sticky;
-        top: 0px;
-        
-    }
-    .listas{ 
-        display: flex;
-        list-style-type: none;
-        height: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-    
-    }
-    .page{
-        color: white;
-        font-size: 50px;
-        text-decoration: none;
-        font-family: Estonia;
-        
-        
+       
+   }
+   .fotoDiv1{ 
+       height: 45%;
+       width: 85%;
+       padding: 25px;
+   
+   }
+   .mainDiv2{
+       grid-area: video;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+   
+       
+   }
+   .video2{
+       height: 65%;
+       width: 100%; 
+   }
+   .main.Par{
+   
+   }
+   .parf{
+       height: 50px;
+       width: 100%;
+       text-align: start;
+       color: blanchedalmond;
+       font-size: 20px;
+       
+   }
+   .mb-3{
+       color: white;
+       padding: 20px;
+   }
+   .form-control{
+       background-color: rgb(59, 54, 59);
+   }
+   .form{
+       margin-top: 100px;
+       height: 60%;
+       width: 60%;
+       font-size: 20px;
+       text-align: center;
+       resize: none;
      }
-    .page:hover{
-         font-size: 50px;
-     }
-        
+   
+   .but{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       align-content: center;
+       
+       justify-content: space-evenly;
+   }
+   .btn-secondary{
+       height: 65px;
+       width: 90px;
+       background-color: rgb(59, 54, 59);
+       
+   }
+   
+   
+   
+   
+   footer{ 
+       background-color: black;
+       width: 100%;
+       height: 200px;
+     
+   }
+   
+   
+   .grilla{
+       display: grid;
+       width: 100%;
+       height: 70px;
+       grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+       grid-template-rows: 100%;   
+   } 
+   .imgGrid{
+       height: 100%;
+       width: 100%;
+       background-size: cover;
+   
+   }
+   .tituloRedes{
+       color: blanchedalmond;
+       font-size: 20px;
+       text-align: center;
+       margin-top: 40px;
+       font-family: Arial, Helvetica, sans-serif;
+      
+   }
+   .iconos{
+       width: 60px;
+       height: 60px;
+       
+   }
+   .iconos:hover{
+       width: 70px;
+       height: 70px;
+   }
+   
+   /*GALERIA*/
+   
+   .carousel-item{
     
-    
-     main{ 
-        height: 700px;
-        background-size: cover;
+   }
+   
+   
+   .container{
+       height: 100%;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+                      
+   }
+   .imgGaleria:hover{
+       height: 120%;
+       width: 120%;
+      
+   }
+   
+   .imgGaleria{
+       height: 100%;
+       width: 100%;
+     transition: 1s width, 1s height;
+     
+       
+   }
+   
+   /*FIN GALERIA*/
+   
+   /*HTML CLIPS*/
+   
+   .grillaClips{
+       display: grid;
+       height: 780px;
+       width: 100%;
+       grid-template-columns: 40% 40%;
+       grid-template-rows:   300px 300px;
+       grid-template-areas: "video video1"
+                            "video2 video3";
+       justify-content: space-around; 
+       align-content: space-around;                       
+   }
+   
+   .videoPresentacion{
+       height: 400px;
+       width: 100%;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+     
+       
+       
+   }
+   .clip{
+       
+       height: 380px;
+       width: 600px;
+       
+   
+   }
+   .clips{
+       height: 100%;
+       width: 100%;
+   }
+   
+   /*FIN CLIPS*/
+   
+   /*MUSICA*/
+   
+   .tracks{
+       height: 70%;
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-evenly;
+   }
+   h3{
+       color: blanchedalmond;
+   font-size: 30px;
+   }
+      
+       
+   
+   
+   
+   
+   /*FIN INDEX*/
+   
+   /*MEDIA QUERIES*/
+   
+   @media only screen and (max-width: 600px) {
+   
+     header{
+               background-color: black;
+               width: 100%;
+               height: 200px;
            }
-
-     .mainHome{  
-        display: grid;
-        padding: 0px;
-        grid-template-columns: 45% 35%;
-        grid-template-rows:  45% 50%;
-        grid-template-areas:"parr tit"
-                            "parr video";
-                            
-        justify-content: space-around;
+           
+           .banner{
+               width: 100%;
+               height: 100%;
+           }
+           
+           .navegador{
+               background-color: black;
+               width: 100%;
+               height: 150px;
+               position: sticky;
+               top: 0px;
+               
+           }
+           .listas{ 
+               
+               flex-direction: column;
+               list-style-type: none;
+               justify-content: space-evenly;
+               align-items: center;
+           
+           }
+           .page{
+               
+               color: white;
+               font-size: 25px;
+               text-decoration: none;
+               font-family: Estonia;   
+            }
+            .page:hover{
+                font-size: 25px;
+            }
+           
+            main{ 
+               height: 900px;
+                  }
+       
+            .mainHome{  
+               display: grid;
+               padding: 0px;
+               grid-template-columns: 95%;
+               grid-template-rows:  60px 350px 350px;
+               grid-template-areas:"tit"
+                                   "video"
+                                   "parr";
+               justify-content: space-around;
+                    
+           } 
+           .mainDivTit{
+               grid-area: tit;
+               display: flex;
+               justify-content: center;
+               padding: 10px;
+               color: lightyellow;
+               font-size:40px;
+               font-family: Dancing Script;
+           }   
+           .mainDiv1{ 
+               grid-area: parr;
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+           }
+           .fotoDiv1{ 
+               height: 100%;
+               width: 65%;
+               
+           
+           }
+           .mainDiv2{
+               grid-area: video;
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+           
+               
+           }
+           .video2{
+               height: 90%;
+               width: 100%; 
+           }
+           .main.Par{
+               height: 150px;
+               width: 100%;
+           }
+           .parf{
+               height: 100%;
+               width: 100%;
+               text-align: start;
+               color: blanchedalmond;
+               font-size: 20px;
+               
+           }
+   
+           .cuadro{
+               height: 90%;
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+           }
+           .form{
+               margin-top: 40px;
+               height: 60%;
+               width: 80%;
+               font-size: 12px;
+               text-align: center;
+               resize: none;
+   
+           }
+           .botonForm{
+               height: 35px;
+               width: 90px;
+           }
+   
+       
+       
+           footer{ 
+               background-color: black;
+               width: 100%;
+               height: 150px;
              
-    } 
-    .mainDivTit{
-        grid-area: tit;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        color: lightyellow;
-        font-size: 50px;
-        font-family: Dancing Script;
-    }   
-    .mainDiv1{ 
-        grid-area: parr;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .fotoDiv1{ 
-        height: 100%;
-        width: 80%;
-        
-    
-    }
-    .mainDiv2{
-        grid-area: video;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    
-        
-    }
-    .video2{
-        height: 90%;
-        width: 100%; 
-    }
-    .main.Par{
-        height: 100px;
-        width: 100%;
-    }
-    .parf{
-        margin-top: 35px;
-        height: 100%;
-        width: 100%;
-        text-align: start;
-        color: blanchedalmond;
-        font-size: 20px;
+           }
+           
+           
+           .grilla{
+               display: grid;
+               width: 100%;
+               height: 50px;
+               grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+               grid-template-rows: 100%;   
+           } 
+           .imgGrid{
+               height: 100%;
+               width: 100%;
+               background-size: cover;
+           
+           }
+           .tituloRedes{
+               color: blanchedalmond;
+               font-size: 15px;
+               text-align: center;
+               margin-top: 25px;
+               font-family: Arial, Helvetica, sans-serif;
+              
+           }
+           .iconos{
+               width: 40px;
+               height: 40px;
+               
+           }
+           .iconos:hover{
+               width: 40px;
+               height: 40px;
+           }
+           .grillaGaleria{
+               width: 100%;
+               height: 70%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+                              
+           }
+           .imgGaleria:hover{
+               height: 90%;
+               width: 55%;
+             
+           }
+           
+           .imgGaleria{
+               height: 90%;
+               width: 55%;
+              
+           }
        
-        
-    }
-    .cuadro{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form{
-        margin-top: 40px;
-        height: 65%;
-        width: 60%;
-        font-size: 20px;
-        text-align: center;
-
-    }
-    .botonForm{
-        height: 35px;
-        width: 90px;
-    }
-
-    footer{ 
-        background-color: black;
-        width: 100%;
-        height: 150px;
-      
-    }
-    
-    
-    .grilla{
-        display: grid;
-        width: 100%;
-        height: 70px;
-        grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-        grid-template-rows: 100%;   
-    } 
-    .imgGrid{
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    
-    }
-    .tituloRedes{
-        color: blanchedalmond;
-        font-size: 15px;
-        text-align: center;
-        margin-top: 25px;
-        font-family: Arial, Helvetica, sans-serif;
        
-    }
-    .iconos{
-        width: 40px;
-        height: 40px;
-        
-    }
-    .iconos:hover{
-        width: 40px;
-        height: 40px;
-    }
-    .grillaGaleria{
-        width: 100%;
-        height: 100%;
-        display: grid;
+           .videoPresentacion{
+               height: 140px;
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               
+           }
+           .clip{
+               
+               height: 130px;
+               width: 80%;
+           }
        
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 45% 45%;
-        grid-template-areas:"area"
-                            "area1" 
-                            "area2"
-                            "area3"
-                            "area4"
-                            "area5";
-        justify-items: center;
-        align-content: space-around;  
-                       
-    }
-    .imgGaleria:hover{
-        height: 80%;
-        width: 90%;
-      
-    }
-    
-    .imgGaleria{
-        height: 80%;
-        width: 90%;
-       
-    }
-
-
-    .videoPresentacion{
-        height: 150px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .clip{
-        
-        height: 100%;
-        width: 60%;
-    }
-
-    .grillaClips{
-        margin-top: 0px;
-        display: grid;
-        height: 700px;
-        width: 100%;
-        grid-template-columns: 47% 47%;
-        grid-template-rows:  230px 230px ;
-        grid-template-areas: "video"
-                             "video1"
-                             "video2"
-                             "video3";
-        justify-items: center;                       
-    }
-    
+           .grillaClips{
+               margin-top: 20px;
+               display: grid;
+               height: 750px;
+               width: 100%;
+               grid-template-columns: 95%;
+               grid-template-rows:  190px 190px 190px 190px;
+               grid-template-areas: "video"
+                                    "video1"
+                                    "video2"
+                                    "video3";
+               justify-items: center;                       
+           }
+           
+          
+           
+           .clips{
+               height: 85%;
+               width: 85%;
+           }
+           
+   }
    
-    
-    .clips{
-        height: 85%;
-        width: 85%;
-    }
-    
-
-
-}
-
-
+   @media only screen and (min-width: 600px) and (max-width:992px){
+       header{
+           background-color: black;
+           width: 100%;
+           height: 300px;
+       }
+       
+       .banner{
+           width: 100%;
+           height: 100%;
+       }
+       
+       .navegador{
+           background-color: black;
+           width: 100%;
+           height: 100px;
+           position: sticky;
+           top: 0px;
+           
+       }
+       .listas{ 
+           display: flex;
+           list-style-type: none;
+           height: 100%;
+           justify-content: space-evenly;
+           align-items: center;
+       
+       }
+       .page{
+           color: white;
+           font-size: 50px;
+           text-decoration: none;
+           font-family: Estonia;
+           
+           
+        }
+       .page:hover{
+            font-size: 50px;
+        }
+           
+       
+       
+        main{ 
+           height: 700px;
+           background-size: cover;
+              }
    
+        .mainHome{  
+           display: grid;
+           padding: 0px;
+           grid-template-columns: 45% 35%;
+           grid-template-rows:  45% 50%;
+           grid-template-areas:"parr tit"
+                               "parr video";
+                               
+           justify-content: space-around;
+                
+       } 
+       .mainDivTit{
+           grid-area: tit;
+           display: flex;
+           justify-content: center;
+           padding: 10px;
+           color: lightyellow;
+           font-size: 50px;
+           font-family: Dancing Script;
+       }   
+       .mainDiv1{ 
+           grid-area: parr;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+       .fotoDiv1{ 
+           height: 100%;
+           width: 80%;
+           
+       
+       }
+       .mainDiv2{
+           grid-area: video;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+       
+           
+       }
+       .video2{
+           height: 90%;
+           width: 100%; 
+       }
+       .main.Par{
+           height: 100px;
+           width: 100%;
+       }
+       .parf{
+           margin-top: 35px;
+           height: 100%;
+           width: 100%;
+           text-align: start;
+           color: blanchedalmond;
+           font-size: 20px;
+          
+           
+       }
+       .cuadro{
+           height: 90%;
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .form{
+           margin-top: 40px;
+           height: 65%;
+           width: 60%;
+           font-size: 20px;
+           text-align: center;
+           resize: none;
+   
+       }
+       .botonForm{
+           height: 35px;
+           width: 90px;
+       }
+   
+       footer{ 
+           background-color: black;
+           width: 100%;
+           height: 150px;
+         
+       }
+       
+       
+       .grilla{
+           display: grid;
+           width: 100%;
+           height: 70px;
+           grid-template-columns :  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+           grid-template-rows: 100%;   
+       } 
+       .imgGrid{
+           height: 100%;
+           width: 100%;
+           background-size: cover;
+       
+       }
+       .tituloRedes{
+           color: blanchedalmond;
+           font-size: 15px;
+           text-align: center;
+           margin-top: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+          
+       }
+       .iconos{
+           width: 40px;
+           height: 40px;
+           
+       }
+       .iconos:hover{
+           width: 40px;
+           height: 40px;
+       }
+       .grillaGaleria{
+           width: 100%;
+           height: 70%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+                          
+       }
+       .imgGaleria:hover{
+           height: 80%;
+           width: 90%;
+         
+       }
+       
+       .imgGaleria{
+           height: 80%;
+           width: 90%;
+          
+       }
+   
+   
+       .videoPresentacion{
+           height: 150px;
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           
+       }
+       .clip{
+           
+           height: 100%;
+           width: 60%;
+       }
+   
+       .grillaClips{
+           margin-top: 0px;
+           display: grid;
+           height: 700px;
+           width: 100%;
+           grid-template-columns: 47% 47%;
+           grid-template-rows:  230px 230px ;
+           grid-template-areas: "video"
+                                "video1"
+                                "video2"
+                                "video3";
+           justify-items: center;                       
+       }
+       
+      
+       
+       .clips{
+           height: 85%;
+           width: 85%;
+       }
+       
+   
+   
+   }
+   
+   
+      
    
