@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 420px; }
+  header .banner {
+    width: 100%;
+    height: 100%; }
+
+/*NAVEGADOR*/
+.nav-link:hover {
+  font-size: 1.25rem; }
+
+main {
+  background-image: url(../imagen/pared2.jpg);
+  width: 100%;
+  height: 1200px;
+  background-size: auto; }
+  main .mainHome {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 100px 900px;
+    grid-template-areas: "parr tit" "parr video" "parr video";
+    justify-content: space-around; }
+    main .mainHome .mainDivTit {
+      grid-area: tit;
+      display: flex;
+      justify-content: center;
+      color: lightyellow;
+      font-size: 150px;
+      padding: 0px;
+      font-family: Dancing Script; }
+    main .mainHome .mainDiv1 {
+      grid-area: parr;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      main .mainHome .mainDiv1 .fotoDiv1 {
+        height: 60%;
+        width: 100%;
+        padding: 25px; }
+    main .mainHome .mainDiv2 {
+      grid-area: video;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      main .mainHome .mainDiv2 .video2 {
+        height: 65%;
+        width: 100%; }
+  main .parf {
+    height: 50px;
+    width: 100%;
+    text-align: start;
+    color: blanchedalmond;
+    font-size: 20px; }
+
+.form-control {
+  background-color: #3b363b; }
+
+.mb-3 {
+  color: white;
+  padding: 20px; }
+
+.but {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly; }
+
+.btn-secondary {
+  height: 65px;
+  width: 90px;
+  background-color: #3b363b; }
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 200px; }
+
+.grilla {
+  display: grid;
+  width: 100%;
+  height: 70px;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 100%; }
+  .grilla .imgGrid {
+    height: 100%;
+    width: 100%;
+    background-size: cover; }
+
+.tituloRedes {
+  color: blanchedalmond;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.iconos {
+  width: 60px;
+  height: 60px; }
+  .iconos:hover {
+    width: 70px;
+    height: 70px; }
+
+/*GALERIA*/
+.container {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  .container .imgGaleria {
+    height: 100%;
+    width: 100%;
+    transition: 1s width, 1s height; }
+    .container .imgGaleria:hover {
+      height: 120%;
+      width: 120%; }
+
+/*FIN GALERIA*/
+/*HTML CLIPS*/
+.grillaClips {
+  display: grid;
+  height: 780px;
+  width: 100%;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: "video video1" "video2 video3";
+  justify-content: space-around;
+  align-content: space-around; }
+
+.videoPresentacion {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.clip {
+  height: 380px;
+  width: 600px; }
+
+.clips {
+  height: 100%;
+  width: 100%; }
+
+/*FIN CLIPS*/
+/*MUSICA*/
+.tracks {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly; }
+
+h3 {
+  color: blanchedalmond;
+  font-size: 30px; }
+
+.grid {
+  display: grid;
+  height: 40%;
+  width: 100%;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 100%;
+  justify-items: center;
+  justify-content: center;
+  color: blanchedalmond; }
+  .grid .card {
+    background-color: rgba(36, 29, 29, 0); }
+
+/*FIN INDEX*/
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: black;
+    width: 100%;
+    height: 200px; }
+    header .banner {
+      width: 100%;
+      height: 100%; }
+  main {
+    height: 900px; }
+    main .mainHome {
+      display: grid;
+      padding: 0px;
+      grid-template-columns: 95%;
+      grid-template-rows: 60px 350px 350px;
+      grid-template-areas: "tit" "video" "parr";
+      justify-content: space-around; }
+      main .mainHome .mainDivTit {
+        grid-area: tit;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: lightyellow;
+        font-size: 40px;
+        font-family: Dancing Script; }
+      main .mainHome .mainDiv1 {
+        grid-area: parr;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainHome .mainDiv1 .fotoDiv1 {
+          height: 100%;
+          width: 65%; }
+      main .mainHome .mainDiv2 {
+        grid-area: video;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainHome .mainDiv2 .video2 {
+          height: 90%;
+          width: 100%; }
+  .main.Par {
+    height: 150px;
+    width: 100%; }
+    .main.Par .parf {
+      height: 100%;
+      width: 100%;
+      text-align: start;
+      color: blanchedalmond;
+      font-size: 20px; }
+  .cuadro {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form {
+    margin-top: 40px;
+    height: 60%;
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+    resize: none; }
+  .botonForm {
+    height: 35px;
+    width: 90px; }
+  footer {
+    background-color: black;
+    width: 100%;
+    height: 150px; }
+  .grilla {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100%; }
+    .grilla .imgGrid {
+      height: 100%;
+      width: 100%;
+      background-size: cover; }
+  .tituloRedes {
+    color: blanchedalmond;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .iconos {
+    width: 40px;
+    height: 40px; }
+    .iconos:hover {
+      width: 40px;
+      height: 40px; }
+  .grillaGaleria {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grillaGaleria .imgGaleria {
+      height: 90%;
+      width: 55%; }
+      .grillaGaleria .imgGaleria:hover {
+        height: 90%;
+        width: 55%; }
+  .videoPresentacion {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .videoPresentacion .clip {
+      height: 130px;
+      width: 80%; }
+  .grillaClips {
+    margin-top: 20px;
+    display: grid;
+    height: 750px;
+    width: 100%;
+    grid-template-columns: 95%;
+    grid-template-rows: 190px 190px 190px 190px;
+    grid-template-areas: "video" "video1" "video2" "video3";
+    justify-items: center; }
+    .grillaClips .clips {
+      height: 85%;
+      width: 85%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  header {
+    background-color: black;
+    width: 100%;
+    height: 300px; }
+  .banner {
+    width: 100%;
+    height: 100%; }
+  .navegador {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px; }
+  .listas {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center; }
+  .page {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Estonia; }
+    .page:hover {
+      font-size: 50px; }
+  main {
+    height: 700px;
+    background-size: cover; }
+    main .mainHome {
+      display: grid;
+      padding: 0px;
+      grid-template-columns: 45% 35%;
+      grid-template-rows: 45% 50%;
+      grid-template-areas: "parr tit" "parr video";
+      justify-content: space-around; }
+      main .mainHome .mainDivTit {
+        grid-area: tit;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: lightyellow;
+        font-size: 50px;
+        font-family: Dancing Script; }
+      main .mainHome .mainDiv1 {
+        grid-area: parr;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainHome .mainDiv1 .fotoDiv1 {
+          height: 100%;
+          width: 80%; }
+      main .mainHome .mainDiv2 {
+        grid-area: video;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainHome .mainDiv2 .video2 {
+          height: 90%;
+          width: 100%; }
+  .main.Par {
+    height: 100px;
+    width: 100%; }
+    .main.Par .parf {
+      margin-top: 35px;
+      height: 100%;
+      width: 100%;
+      text-align: start;
+      color: blanchedalmond;
+      font-size: 20px; }
+  .cuadro {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form {
+    margin-top: 40px;
+    height: 65%;
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    resize: none; }
+  .botonForm {
+    height: 35px;
+    width: 90px; }
+  footer {
+    background-color: black;
+    width: 100%;
+    height: 150px; }
+  .grilla {
+    display: grid;
+    width: 100%;
+    height: 70px;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100%; }
+    .grilla .imgGrid {
+      height: 100%;
+      width: 100%;
+      background-size: cover; }
+  .tituloRedes {
+    color: blanchedalmond;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .iconos {
+    width: 40px;
+    height: 40px; }
+    .iconos:hover {
+      width: 40px;
+      height: 40px; }
+  .grillaGaleria {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grillaGaleria .imgGaleria {
+      height: 80%;
+      width: 90%; }
+      .grillaGaleria .imgGaleria:hover {
+        height: 80%;
+        width: 90%; }
+  .videoPresentacion {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .videoPresentacion .clip {
+      height: 100%;
+      width: 60%; }
+  .grillaClips {
+    margin-top: 0px;
+    display: grid;
+    height: 700px;
+    width: 100%;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 230px 230px;
+    grid-template-areas: "video" "video1" "video2" "video3";
+    justify-items: center; }
+    .grillaClips .clips {
+      height: 85%;
+      width: 85%; } }
