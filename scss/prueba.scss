@@ -1,5 +1,27 @@
+/*Variables*/
+$fotoHome:  url("../imagen/madera.jpg");
 
- $fondo:red;
+/*Extend*/
+.textos{
+	background-color: rgba(255, 235, 205, 0);
+	    height: 50px;
+		width: 100%;
+		text-align: start;
+		color: rgb(194, 241, 245);
+		font-size: 20px;
+	
+}
+
+/*Mixin*/
+
+@mixin titulos($color, $tamLetra,) {
+			color: $color;
+            font-size: $tamLetra;
+          	font-family: Dancing Script;
+	
+}
+
+
 
 *{ margin: 0;
     padding: 0;
@@ -27,7 +49,7 @@
 	}
 }
 main {
-	background-image: url(../imagen/pared2.jpg);
+	background-image: $fotoHome;
 	width: 100%;
 	height: 1200px;
 	background-size: auto;
@@ -42,10 +64,8 @@ main {
             grid-area: tit;
             display: flex;
             justify-content: center;
-            color: lightyellow;
-            font-size: 150px;
-            padding: 0px;
-            font-family: Dancing Script;
+			@include titulos(rgb(132, 218, 203), 150px);
+            
         }
         .mainDiv1 {
             grid-area: parr;
@@ -69,13 +89,15 @@ main {
             }
         }
     }
-    .parf {
-        height: 50px;
-        width: 100%;
-        text-align: start;
-        color: blanchedalmond;
-        font-size: 20px;
-    }
+	
+}
+.main.Par{
+		height: 150px;
+		width: 100%;
+    	
+}
+.parf {
+		@extend.textos;
 }
 
 
@@ -86,8 +108,8 @@ main {
     background-color: rgb(59, 54, 59);
 }
 .mb-3 {
-    color: white;
-    padding: 20px;
+	padding: 10px;
+    @include titulos(rgb(132, 218, 203), 30px);
 }    
 
 .but {
@@ -200,8 +222,7 @@ footer {
 	justify-content: space-evenly;
 }
 h3 {
-	color: blanchedalmond;
-	font-size: 30px;
+	@include titulos( rgba(160, 11, 11, 0.726), 50px);
 }
 .grid {
 	display: grid;
@@ -224,6 +245,9 @@ h3 {
    /*MEDIA QUERIES*/
    @media only screen and (max-width: 600px) {
 	
+	 
+	
+	
     header {
 		background-color: black;
 		width: 100%;
@@ -237,6 +261,7 @@ h3 {
 	
 	main {
 		height: 900px;
+		
         .mainHome {
             display: grid;
             padding: 0px;
@@ -249,9 +274,7 @@ h3 {
                 display: flex;
                 justify-content: center;
                 padding: 10px;
-                color: lightyellow;
-                font-size: 40px;
-                font-family: Dancing Script;
+               @include titulos(rgb(132, 218, 203), 60px);
             }
             .mainDiv1 {
                 grid-area: parr;
@@ -259,7 +282,7 @@ h3 {
                 justify-content: space-evenly;
                 align-items: center;
                 .fotoDiv1 {
-                    height: 100%;
+                    height: 90%;
                     width: 65%;
                 }
             }
@@ -269,26 +292,28 @@ h3 {
                 justify-content: space-evenly;
                 align-items: center;
                 .video2 {
-                    height: 90%;
+                    height: 80%;
                     width: 100%;
                 }
             }
+			
+			
+		
         }
+		
 	}
-	
-	
 	.main.Par {
 		height: 150px;
 		width: 100%;
-        .parf {
-            height: 100%;
-            width: 100%;
-            text-align: start;
-            color: blanchedalmond;
-            font-size: 20px;
-        }
+		
 	}
-
+	.parf {
+		
+		
+		font-size: 15px;
+	}
+	
+	
 	.cuadro {
 		height: 90%;
 		width: 100%;
@@ -385,6 +410,17 @@ h3 {
 	
 }
 @media only screen and (min-width: 600px) and (max-width:992px) {
+	.texto{
+		background-color: rgba(255, 235, 205, 0);
+			height: 50px;
+			width: 100%;
+			text-align: start;
+			color: rgb(194, 241, 245);
+			font-size: 20px;
+		
+	}
+	
+	
 	header {
 		background-color: black;
 		width: 100%;
@@ -432,9 +468,7 @@ h3 {
 				display: flex;
 				justify-content: center;
 				padding: 10px;
-				color: lightyellow;
-				font-size: 50px;
-				font-family: Dancing Script;
+				@include titulos(rgb(132, 218, 203), 70px);
 			}
 			.mainDiv1 {
 				grid-area: parr;
@@ -458,25 +492,20 @@ h3 {
 			}
 	   		}
 		}
+			
+	
 	}
-	
-	
-	
-	
 	
 	.main.Par {
 		height: 100px;
 		width: 100%;
-		.parf {
-			margin-top: 35px;
-			height: 100%;
-			width: 100%;
-			text-align: start;
-			color: blanchedalmond;
-			font-size: 20px;
-		}
+		
+
 	}
-	
+	.parf {
+		margin-top: 35px;
+		@extend.texto;
+	}
 	.cuadro {
 		height: 90%;
 		width: 100%;

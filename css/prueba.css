@@ -1,3 +1,14 @@
+/*Variables*/
+/*Extend*/
+.textos, .parf {
+  background-color: rgba(255, 235, 205, 0);
+  height: 50px;
+  width: 100%;
+  text-align: start;
+  color: #c2f1f5;
+  font-size: 20px; }
+
+/*Mixin*/
 * {
   margin: 0;
   padding: 0; }
@@ -15,7 +26,7 @@ header {
   font-size: 1.25rem; }
 
 main {
-  background-image: url(../imagen/pared2.jpg);
+  background-image: url("../imagen/madera.jpg");
   width: 100%;
   height: 1200px;
   background-size: auto; }
@@ -30,9 +41,8 @@ main {
       grid-area: tit;
       display: flex;
       justify-content: center;
-      color: lightyellow;
+      color: #84dacb;
       font-size: 150px;
-      padding: 0px;
       font-family: Dancing Script; }
     main .mainHome .mainDiv1 {
       grid-area: parr;
@@ -51,19 +61,19 @@ main {
       main .mainHome .mainDiv2 .video2 {
         height: 65%;
         width: 100%; }
-  main .parf {
-    height: 50px;
-    width: 100%;
-    text-align: start;
-    color: blanchedalmond;
-    font-size: 20px; }
+
+.main.Par {
+  height: 150px;
+  width: 100%; }
 
 .form-control {
   background-color: #3b363b; }
 
 .mb-3 {
-  color: white;
-  padding: 20px; }
+  padding: 10px;
+  color: #84dacb;
+  font-size: 30px;
+  font-family: Dancing Script; }
 
 .but {
   width: 100%;
@@ -158,8 +168,9 @@ footer {
   justify-content: space-evenly; }
 
 h3 {
-  color: blanchedalmond;
-  font-size: 30px; }
+  color: rgba(160, 11, 11, 0.726);
+  font-size: 50px;
+  font-family: Dancing Script; }
 
 .grid {
   display: grid;
@@ -197,8 +208,8 @@ h3 {
         display: flex;
         justify-content: center;
         padding: 10px;
-        color: lightyellow;
-        font-size: 40px;
+        color: #84dacb;
+        font-size: 60px;
         font-family: Dancing Script; }
       main .mainHome .mainDiv1 {
         grid-area: parr;
@@ -206,7 +217,7 @@ h3 {
         justify-content: space-evenly;
         align-items: center; }
         main .mainHome .mainDiv1 .fotoDiv1 {
-          height: 100%;
+          height: 90%;
           width: 65%; }
       main .mainHome .mainDiv2 {
         grid-area: video;
@@ -214,17 +225,13 @@ h3 {
         justify-content: space-evenly;
         align-items: center; }
         main .mainHome .mainDiv2 .video2 {
-          height: 90%;
+          height: 80%;
           width: 100%; }
   .main.Par {
     height: 150px;
     width: 100%; }
-    .main.Par .parf {
-      height: 100%;
-      width: 100%;
-      text-align: start;
-      color: blanchedalmond;
-      font-size: 20px; }
+  .parf {
+    font-size: 15px; }
   .cuadro {
     height: 90%;
     width: 100%;
@@ -301,6 +308,13 @@ h3 {
       width: 85%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+  .texto, .parf {
+    background-color: rgba(255, 235, 205, 0);
+    height: 50px;
+    width: 100%;
+    text-align: start;
+    color: #c2f1f5;
+    font-size: 20px; }
   header {
     background-color: black;
     width: 100%;
@@ -342,8 +356,8 @@ h3 {
         display: flex;
         justify-content: center;
         padding: 10px;
-        color: lightyellow;
-        font-size: 50px;
+        color: #84dacb;
+        font-size: 70px;
         font-family: Dancing Script; }
       main .mainHome .mainDiv1 {
         grid-area: parr;
@@ -364,13 +378,8 @@ h3 {
   .main.Par {
     height: 100px;
     width: 100%; }
-    .main.Par .parf {
-      margin-top: 35px;
-      height: 100%;
-      width: 100%;
-      text-align: start;
-      color: blanchedalmond;
-      font-size: 20px; }
+  .parf {
+    margin-top: 35px; }
   .cuadro {
     height: 90%;
     width: 100%;
