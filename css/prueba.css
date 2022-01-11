@@ -1,12 +1,10 @@
 /*Variables*/
 /*Extend*/
-.textos, .parf {
+.textos, main .mainPar .parf {
   background-color: rgba(255, 235, 205, 0);
-  height: 50px;
-  width: 100%;
-  text-align: start;
-  color: #c2f1f5;
-  font-size: 20px; }
+  color: #dbd59d;
+  font-size: 25px;
+  font-family: Dancing Script; }
 
 /*Mixin*/
 * {
@@ -41,7 +39,7 @@ main {
       grid-area: tit;
       display: flex;
       justify-content: center;
-      color: #84dacb;
+      color: #b1dfd7;
       font-size: 150px;
       font-family: Dancing Script; }
     main .mainHome .mainDiv1 {
@@ -61,31 +59,44 @@ main {
       main .mainHome .mainDiv2 .video2 {
         height: 65%;
         width: 100%; }
+  main .mainPar {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    main .mainPar .parf {
+      width: 80%;
+      text-align: center;
+      font-size: 35px; }
 
-.main.Par {
-  height: 150px;
-  width: 100%; }
-
-.form-control {
-  background-color: #3b363b; }
-
-.mb-3 {
-  padding: 10px;
-  color: #84dacb;
-  font-size: 30px;
-  font-family: Dancing Script; }
-
-.but {
+.contact {
+  height: 500px;
   width: 100%;
-  height: 100px;
+  padding: 40px;
   display: flex;
   align-content: center;
-  justify-content: space-evenly; }
-
-.btn-secondary {
-  height: 65px;
-  width: 90px;
-  background-color: #3b363b; }
+  justify-content: center; }
+  .contact .contac {
+    width: 75%; }
+    .contact .contac .form-control {
+      background-color: #3b363b;
+      resize: none; }
+    .contact .contac .mb-3 {
+      padding: 10px;
+      color: #84dacb;
+      font-size: 30px;
+      font-family: Dancing Script; }
+  .contact .but {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly; }
+  .contact .btn-secondary {
+    height: 65px;
+    width: 90px;
+    background-color: #3b363b; }
 
 footer {
   background-color: black;
@@ -161,16 +172,34 @@ footer {
 /*FIN CLIPS*/
 /*MUSICA*/
 .tracks {
-  height: 70%;
+  height: 15%;
   width: 100%;
   display: flex;
-  align-items: flex-start;
   justify-content: space-evenly; }
 
 h3 {
-  color: rgba(160, 11, 11, 0.726);
+  padding: 50px;
+  color: rgba(113, 209, 209, 0.726);
   font-size: 50px;
   font-family: Dancing Script; }
+
+h4 {
+  color: rgba(113, 209, 209, 0.726);
+  font-size: 34px;
+  font-family: Dancing Script; }
+
+.plays {
+  padding: 40px; }
+  .plays .play {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .plays .play .fotoMusic {
+      height: 100%;
+      width: 100%; }
 
 .grid {
   display: grid;
@@ -187,6 +216,10 @@ h3 {
 /*FIN INDEX*/
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
+  .card-title {
+    font-size: 0px; }
+  .card-text {
+    font-size: 0px; }
   header {
     background-color: black;
     width: 100%;
@@ -227,27 +260,43 @@ h3 {
         main .mainHome .mainDiv2 .video2 {
           height: 80%;
           width: 100%; }
-  .main.Par {
-    height: 150px;
-    width: 100%; }
-  .parf {
-    font-size: 15px; }
-  .cuadro {
-    height: 90%;
+    main .mainPar {
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center; }
+      main .mainPar .parf {
+        width: 80%;
+        text-align: center;
+        font-size: 17px; }
+  .contact {
+    height: 400px;
     width: 100%;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .form {
-    margin-top: 40px;
-    height: 60%;
-    width: 80%;
-    font-size: 12px;
-    text-align: center;
-    resize: none; }
-  .botonForm {
-    height: 35px;
-    width: 90px; }
+    align-content: center;
+    justify-content: center; }
+    .contact .contac {
+      width: 75%; }
+      .contact .contac .form-control {
+        background-color: #3b363b;
+        resize: none; }
+      .contact .contac .mb-3 {
+        padding: 10px;
+        color: #84dacb;
+        font-size: 30px;
+        font-family: Dancing Script; }
+    .contact .but {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly; }
+    .contact .btn-secondary {
+      height: 45px;
+      width: 90px;
+      background-color: #3b363b; }
   footer {
     background-color: black;
     width: 100%;
@@ -308,13 +357,6 @@ h3 {
       width: 85%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  .texto, .parf {
-    background-color: rgba(255, 235, 205, 0);
-    height: 50px;
-    width: 100%;
-    text-align: start;
-    color: #c2f1f5;
-    font-size: 20px; }
   header {
     background-color: black;
     width: 100%;
@@ -342,7 +384,7 @@ h3 {
     .page:hover {
       font-size: 50px; }
   main {
-    height: 700px;
+    height: 900px;
     background-size: cover; }
     main .mainHome {
       display: grid;
@@ -375,27 +417,70 @@ h3 {
         main .mainHome .mainDiv2 .video2 {
           height: 90%;
           width: 100%; }
-  .main.Par {
-    height: 100px;
-    width: 100%; }
-  .parf {
-    margin-top: 35px; }
-  .cuadro {
-    height: 90%;
+    main .mainPar {
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center; }
+      main .mainPar .parf {
+        padding: 30px;
+        width: 80%;
+        text-align: center;
+        font-size: 35px; }
+  .contact {
+    height: 400px;
     width: 100%;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .form {
-    margin-top: 40px;
-    height: 65%;
-    width: 60%;
-    font-size: 20px;
-    text-align: center;
-    resize: none; }
-  .botonForm {
-    height: 35px;
-    width: 90px; }
+    align-content: center;
+    justify-content: center; }
+    .contact .contac {
+      width: 75%; }
+      .contact .contac .form-control {
+        background-color: #3b363b;
+        resize: none; }
+      .contact .contac .mb-3 {
+        padding: 10px;
+        color: #84dacb;
+        font-size: 30px;
+        font-family: Dancing Script; }
+    .contact .but {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly; }
+    .contact .btn-secondary {
+      height: 65px;
+      width: 90px;
+      background-color: #3b363b; }
+    .contact .tracks {
+      height: 15%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+  h3 {
+    padding: 20px;
+    color: rgba(113, 209, 209, 0.726);
+    font-size: 40px;
+    font-family: Dancing Script; }
+  h4 {
+    color: rgba(113, 209, 209, 0.726);
+    font-size: 25px;
+    font-family: Dancing Script; }
+  .plays {
+    padding: 0px; }
+    .plays .play {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+      .plays .play .fotoMusic {
+        height: 100%;
+        width: 100%; }
   footer {
     background-color: black;
     width: 100%;
