@@ -4,7 +4,7 @@ $fotoHome:  url("../imagen/madera.jpg");
 /*Extend*/
 .textos{
 	background-color: rgba(255, 235, 205, 0);
-		color: rgb(219, 213, 157);
+		color: rgb(178, 215, 240);
 		font-size: 25px;
 		font-family: Dancing Script;
 	
@@ -38,10 +38,27 @@ $fotoHome:  url("../imagen/madera.jpg");
 
 
    /*NAVEGADOR*/
-   
+
+   .bg-dark{
+	   background-color: black !important;
+   }
+
+.container-fluid{
+	background-color: rgb(0, 0, 0);
+}
+.navbar-brand{
+	font-family: Dancing Script;
+	font-size: 25px;
+	&:hover{
+		font-size: 30px;
+	}
+}
+
 .nav-link {
+	font-family: Dancing Script;
+	font-size: 25px;	
        &:hover {
-		font-size: 1.25rem;
+		font-size:30px;
 		}
 }
 
@@ -61,7 +78,7 @@ main {
             grid-area: tit;
             display: flex;
             justify-content: center;
-			@include titulos(rgb(177, 223, 215), 150px);
+			@include titulos(rgb(178, 215, 240), 150px);
             
         }
         .mainDiv1 {
@@ -119,10 +136,11 @@ main {
 		.form-control {
 			background-color: rgb(59, 54, 59);
 			resize: none;
+			color:whitesmoke;
 		}
 		.mb-3 {
 			padding: 10px;
-			@include titulos(rgb(132, 218, 203), 30px);
+			@include titulos(rgb(178, 215, 240), 30px);
 		}    
 		
 	}
@@ -177,7 +195,6 @@ footer {
 		height: 70px;
 	}
 }
-
    
    /*GALERIA*/
    
@@ -241,11 +258,11 @@ footer {
 }
 h3 {
 	padding: 50px;
-	@include titulos( rgba(113, 209, 209, 0.726), 50px);
+	@include titulos( rgb(178, 215, 240), 50px);
 }
 h4{
 	
-	@include titulos( rgba(113, 209, 209, 0.726), 34px);
+	@include titulos( rgb(178, 215, 240), 34px);
 }
 
 .plays{
@@ -326,7 +343,7 @@ h4{
                 display: flex;
                 justify-content: center;
                 padding: 10px;
-               @include titulos(rgb(132, 218, 203), 60px);
+               @include titulos(rgb(178, 215, 240), 60px);
             }
             .mainDiv1 {
                 grid-area: parr;
@@ -385,7 +402,7 @@ h4{
 			}
 			.mb-3 {
 				padding: 10px;
-				@include titulos(rgb(132, 218, 203), 30px);
+				@include titulos(rgb(178, 215, 240), 30px);
 			}    
 			
 		}
@@ -535,7 +552,7 @@ h4{
 				display: flex;
 				justify-content: center;
 				padding: 10px;
-				@include titulos(rgb(132, 218, 203), 70px);
+				@include titulos(rgb(178, 215, 240), 70px);
 			  }
 			   .mainDiv1 {
 				  grid-area: parr;
@@ -594,7 +611,7 @@ h4{
 			}
 			.mb-3 {
 				padding: 10px;
-				@include titulos(rgb(132, 218, 203), 30px);
+				@include titulos(rgb(178, 215, 240), 30px);
 			}    
 			
 		}
@@ -621,11 +638,11 @@ h4{
 	}
 	h3 {
 		padding: 20px;
-		@include titulos( rgba(113, 209, 209, 0.726), 40px);
+		@include titulos(rgb(178, 215, 240), 40px);
 	}
 	h4{
 		
-		@include titulos( rgba(113, 209, 209, 0.726), 25px);
+		@include titulos( rgb(178, 215, 240), 25px);
 	}
 	
 	

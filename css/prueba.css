@@ -2,7 +2,7 @@
 /*Extend*/
 .textos, main .mainPar .parf {
   background-color: rgba(255, 235, 205, 0);
-  color: #dbd59d;
+  color: #b2d7f0;
   font-size: 25px;
   font-family: Dancing Script; }
 
@@ -20,8 +20,23 @@ header {
     height: 100%; }
 
 /*NAVEGADOR*/
-.nav-link:hover {
-  font-size: 1.25rem; }
+.bg-dark {
+  background-color: black !important; }
+
+.container-fluid {
+  background-color: black; }
+
+.navbar-brand {
+  font-family: Dancing Script;
+  font-size: 25px; }
+  .navbar-brand:hover {
+    font-size: 30px; }
+
+.nav-link {
+  font-family: Dancing Script;
+  font-size: 25px; }
+  .nav-link:hover {
+    font-size: 30px; }
 
 main {
   background-image: url("../imagen/madera.jpg");
@@ -39,7 +54,7 @@ main {
       grid-area: tit;
       display: flex;
       justify-content: center;
-      color: #b1dfd7;
+      color: #b2d7f0;
       font-size: 150px;
       font-family: Dancing Script; }
     main .mainHome .mainDiv1 {
@@ -81,10 +96,11 @@ main {
     width: 75%; }
     .contact .contac .form-control {
       background-color: #3b363b;
-      resize: none; }
+      resize: none;
+      color: whitesmoke; }
     .contact .contac .mb-3 {
       padding: 10px;
-      color: #84dacb;
+      color: #b2d7f0;
       font-size: 30px;
       font-family: Dancing Script; }
   .contact .but {
@@ -179,12 +195,12 @@ footer {
 
 h3 {
   padding: 50px;
-  color: rgba(113, 209, 209, 0.726);
+  color: #b2d7f0;
   font-size: 50px;
   font-family: Dancing Script; }
 
 h4 {
-  color: rgba(113, 209, 209, 0.726);
+  color: #b2d7f0;
   font-size: 34px;
   font-family: Dancing Script; }
 
@@ -241,7 +257,7 @@ h4 {
         display: flex;
         justify-content: center;
         padding: 10px;
-        color: #84dacb;
+        color: #b2d7f0;
         font-size: 60px;
         font-family: Dancing Script; }
       main .mainHome .mainDiv1 {
@@ -284,7 +300,7 @@ h4 {
         resize: none; }
       .contact .contac .mb-3 {
         padding: 10px;
-        color: #84dacb;
+        color: #b2d7f0;
         font-size: 30px;
         font-family: Dancing Script; }
     .contact .but {
@@ -398,7 +414,7 @@ h4 {
         display: flex;
         justify-content: center;
         padding: 10px;
-        color: #84dacb;
+        color: #b2d7f0;
         font-size: 70px;
         font-family: Dancing Script; }
       main .mainHome .mainDiv1 {
@@ -442,7 +458,7 @@ h4 {
         resize: none; }
       .contact .contac .mb-3 {
         padding: 10px;
-        color: #84dacb;
+        color: #b2d7f0;
         font-size: 30px;
         font-family: Dancing Script; }
     .contact .but {
@@ -462,11 +478,11 @@ h4 {
       justify-content: space-evenly; }
   h3 {
     padding: 20px;
-    color: rgba(113, 209, 209, 0.726);
+    color: #b2d7f0;
     font-size: 40px;
     font-family: Dancing Script; }
   h4 {
-    color: rgba(113, 209, 209, 0.726);
+    color: #b2d7f0;
     font-size: 25px;
     font-family: Dancing Script; }
   .plays {
